@@ -8,11 +8,11 @@ dict = {
 choice = None
 while choice != '0':
     print("""
-Введите имя чьего отца вы хотите узнать 
+Введите имя чьего деда вы хотите узнать 
     """)
     choice = input("").title()
     if choice in dict.keys():
-        print(f"Отца {choice} зовут {dict[choice]}")
+        print(f"Деда {choice} зовут {dict[dict[choice]]}")
     else:
         print("Я такого не знаю")
     input("\nДля выхода нажмите Enter")
